@@ -1,0 +1,9 @@
+<div class="parent">
+  <h1>Composant parent</h1>
+  <p>Valeur du compteur : {{ parentCount() }}</p>
+
+  <app-counter
+    [count]="parentCount()"
+    (increment)="handleIncrement()"
+  ></app-counter>
+</div>
